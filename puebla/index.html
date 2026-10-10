@@ -452,6 +452,23 @@ footer a.ig{color:var(--dim);border-bottom:1px solid rgba(255,255,255,.25);paddi
 .rcard b{font-size:clamp(17px,1.9vw,22px);overflow-wrap:anywhere}
 .grad{padding-right:.1em;margin-right:-.1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .mega.grad{padding-right:.12em;margin-right:0;display:inline-block}
+h1 .grad,h2 .grad,h3 .grad{padding-right:0;margin-right:0}
+.viral h3{font-size:clamp(26px,3.4vw,50px);overflow-wrap:normal;word-break:normal}
+
+.eng{margin-top:18px;padding:26px;border-radius:22px;border:1px solid var(--line);background:var(--panel)}
+.eng-top{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.eng-top>div{padding:20px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid var(--line);min-width:0}
+.eng-top>div.hot{background:linear-gradient(160deg,rgba(255,42,0,.2),rgba(255,138,0,.06) 60%,var(--bg2));border-color:rgba(255,138,0,.4)}
+.eng-top b{display:block;font-family:"PROS";font-weight:400;font-size:clamp(28px,3.4vw,46px);line-height:1.05;white-space:nowrap}
+.eng-top span{display:block;margin-top:10px;font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.eng-top small{display:block;margin-top:4px;color:var(--mut);font-size:12.5px}
+.eng-rows{display:grid;gap:8px;margin-top:12px}
+.er{display:grid;grid-template-columns:minmax(0,1.1fr) repeat(3,minmax(0,1fr));gap:10px;align-items:center;padding:12px 16px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.02)}
+.er .en{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}
+.er b{display:block;font-family:"PROS";font-weight:400;font-size:clamp(16px,1.7vw,22px);white-space:nowrap}.er b.o{color:var(--org)}
+.er small{color:var(--mut);font-size:11.5px}
+@media (max-width:700px){.eng{padding:16px}.eng-top{grid-template-columns:minmax(0,1fr)}.eng-top>div{padding:14px 16px}.eng-top b{font-size:30px}.eng-top span{margin-top:6px;font-size:11px}
+ .er{grid-template-columns:minmax(0,1fr);gap:6px;padding:12px 14px}.er>span:not(.en){display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:6px;border-top:1px solid var(--line)}.er b{font-size:18px;order:2}.er small{order:1;font-size:12px}}
 /* portada en video + palmeras */
 .hero{min-height:max(94vh,580px)}
 .hero .bgv{position:absolute;inset:0;overflow:hidden;background:#000}
@@ -590,6 +607,23 @@ footer a.ig:hover{color:#fff;border-color:var(--org)}
 }
 .grad{padding-right:.1em;margin-right:-.1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .mega.grad{padding-right:.12em;margin-right:0;display:inline-block}
+h1 .grad,h2 .grad,h3 .grad{padding-right:0;margin-right:0}
+.viral h3{font-size:clamp(26px,3.4vw,50px);overflow-wrap:normal;word-break:normal}
+
+.eng{margin-top:18px;padding:26px;border-radius:22px;border:1px solid var(--line);background:var(--panel)}
+.eng-top{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.eng-top>div{padding:20px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid var(--line);min-width:0}
+.eng-top>div.hot{background:linear-gradient(160deg,rgba(255,42,0,.2),rgba(255,138,0,.06) 60%,var(--bg2));border-color:rgba(255,138,0,.4)}
+.eng-top b{display:block;font-family:"PROS";font-weight:400;font-size:clamp(28px,3.4vw,46px);line-height:1.05;white-space:nowrap}
+.eng-top span{display:block;margin-top:10px;font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.eng-top small{display:block;margin-top:4px;color:var(--mut);font-size:12.5px}
+.eng-rows{display:grid;gap:8px;margin-top:12px}
+.er{display:grid;grid-template-columns:minmax(0,1.1fr) repeat(3,minmax(0,1fr));gap:10px;align-items:center;padding:12px 16px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.02)}
+.er .en{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}
+.er b{display:block;font-family:"PROS";font-weight:400;font-size:clamp(16px,1.7vw,22px);white-space:nowrap}.er b.o{color:var(--org)}
+.er small{color:var(--mut);font-size:11.5px}
+@media (max-width:700px){.eng{padding:16px}.eng-top{grid-template-columns:minmax(0,1fr)}.eng-top>div{padding:14px 16px}.eng-top b{font-size:30px}.eng-top span{margin-top:6px;font-size:11px}
+ .er{grid-template-columns:minmax(0,1fr);gap:6px;padding:12px 14px}.er>span:not(.en){display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:6px;border-top:1px solid var(--line)}.er b{font-size:18px;order:2}.er small{order:1;font-size:12px}}
 .act>*,.ai>*,.record>*,.medios>*,.tline>*,.mats>*,.moms>*{min-width:0}
 @media (max-width:1180px){.tline{grid-template-columns:repeat(2,minmax(0,1fr))}.medios{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:980px){.acts,.act,.act.wide,.ai,.record{grid-template-columns:minmax(0,1fr)}.dest{grid-template-columns:repeat(4,minmax(0,1fr))}.tx4{grid-template-columns:repeat(2,minmax(0,1fr))!important}.ph4,.crowd{grid-template-columns:repeat(2,minmax(0,1fr))}.mats img{height:260px}}
@@ -634,6 +668,17 @@ function go(){var q=v.play();if(q&&q.catch)q.catch(function(){})}v.addEventListe
 <div class="kpi"><div class="kv"><span data-count="147" data-f="n">147</span></div><div class="kl">Piezas publicadas</div><div class=ks>74 en IG · 73 en FB</div></div>
 <div class="kpi"><div class="kv"><span data-count="2160" data-f="n">2.160</span></div><div class="kl">Spots de radio y TV</div><div class=ks>plan de medios tradicionales en Puebla</div></div>
 </div>
+<div class="eng"><div class="kick">Alcance, interacciones y engagement · periodo analizado</div>
+<div class="eng-top">
+<div><b class="num">778,4k</b><span>Alcance acumulado</span><small>Instagram + Facebook</small></div>
+<div><b class="num">52,5k</b><span>Interacciones</span><small>likes, comentarios, compartidos y guardados</small></div>
+<div class="hot"><b class="num grad">6,8%</b><span>Engagement</span><small>interacciones sobre alcance</small></div>
+</div>
+<div class="eng-rows">
+<div class="er"><span class="en">Instagram</span><span><b>645.009</b><small>alcance</small></span><span><b>50.116</b><small>interacciones</small></span><span><b class="o">7,8%</b><small>engagement</small></span></div>
+<div class="er"><span class="en">Facebook</span><span><b>133.430</b><small>alcance</small></span><span><b>2.432</b><small>interacciones</small></span><span><b class="o">1,8%</b><small>engagement</small></span></div>
+</div>
+<p class="note">El engagement mide qué proporción de las personas alcanzadas reaccionó, comentó, compartió o guardó el contenido. El alcance acumulado suma el alcance de cada publicación.</p></div>
 <div class="panel" style="margin-top:18px"><div class="kick">Instagram · visualizaciones diarias de la cuenta, 5 sep → 9 oct</div><div class="days"><div class="db" title="5 sep: 46.684"><i style="height:10.0%"></i></div><div class="db" title="6 sep: 35.758"><i style="height:7.7%"></i></div><div class="db" title="7 sep: 58.340"><i style="height:12.5%"></i></div><div class="db" title="8 sep: 86.746"><i style="height:18.6%"></i></div><div class="db" title="9 sep: 56.294"><i style="height:12.1%"></i></div><div class="db" title="10 sep: 37.991"><i style="height:8.1%"></i></div><div class="db" title="11 sep: 21.672"><i style="height:4.6%"></i></div><div class="db" title="12 sep: 55.652"><i style="height:11.9%"></i></div><div class="db" title="13 sep: 62.957"><i style="height:13.5%"></i></div><div class="db" title="14 sep: 38.049"><i style="height:8.1%"></i></div><div class="db" title="15 sep: 49.376"><i style="height:10.6%"></i></div><div class="db" title="16 sep: 35.535"><i style="height:7.6%"></i></div><div class="db" title="17 sep: 28.684"><i style="height:6.1%"></i></div><div class="db" title="18 sep: 40.842"><i style="height:8.7%"></i></div><div class="db" title="19 sep: 28.821"><i style="height:6.2%"></i></div><div class="db" title="20 sep: 52.743"><i style="height:11.3%"></i></div><div class="db" title="21 sep: 68.128"><i style="height:14.6%"></i></div><div class="db" title="22 sep: 65.556"><i style="height:14.0%"></i></div><div class="db" title="23 sep: 69.766"><i style="height:14.9%"></i></div><div class="db" title="24 sep: 50.430"><i style="height:10.8%"></i></div><div class="db" title="25 sep: 47.732"><i style="height:10.2%"></i></div><div class="db" title="26 sep: 51.480"><i style="height:11.0%"></i></div><div class="db" title="27 sep: 71.022"><i style="height:15.2%"></i></div><div class="db" title="28 sep: 100.857"><i style="height:21.6%"></i></div><div class="db" title="29 sep: 87.892"><i style="height:18.8%"></i></div><div class="db" title="30 sep: 125.783"><i style="height:26.9%"></i></div><div class="db" title="1 oct: 121.892"><i style="height:26.1%"></i></div><div class="db" title="2 oct: 186.638"><i style="height:40.0%"></i></div><div class="db hot" title="3 oct: 300.651"><i style="height:64.4%"></i></div><div class="db hot" title="4 oct: 466.865"><i style="height:100.0%"></i></div><div class="db hot" title="5 oct: 334.534"><i style="height:71.7%"></i></div><div class="db" title="6 oct: 154.418"><i style="height:33.1%"></i></div><div class="db" title="7 oct: 81.166"><i style="height:17.4%"></i></div><div class="db" title="8 oct: 120.195"><i style="height:25.7%"></i></div><div class="db" title="9 oct: 233.631"><i style="height:50.0%"></i></div></div><div class="dlab"><span>5 sep</span><span>Race weekend · 3–5 oct</span><span>9 oct</span></div></div>
 <div class="readout"><div class="kick">Qué muestra el gráfico</div>
 <p>Cada barra es un día de la campaña. Durante septiembre, la cuenta sostuvo entre 20.000 y 100.000 visualizaciones diarias con anuncios, venta de entradas y presentación de pilotos. En la semana de carrera la curva sube con las activaciones y los sold outs, y el fin de semana alcanza su máximo: <b>1.102.050 visualizaciones entre el 3 y el 5 de octubre</b>, con un pico de 466.865 el día de carrera. Después, los resultados y el anuncio del récord mantuvieron la conversación en niveles muy superiores a la previa.</p></div>
@@ -904,23 +949,23 @@ function go(){var q=v.play();if(q&&q.catch)q.catch(function(){})}v.addEventListe
 <p>Las 74 piezas de Instagram clasificadas por familia de contenido, ordenadas por visualizaciones totales.</p></div>
 <div class="panel"><div class="crow"><div class="cn"><span class="rk">01</span><div><b>Informativos y anuncios oficiales</b><small>Lanzamiento, ruedas de prensa, formato, programa, transmisión y aliados.</small></div></div>
 <div class="cb"><div class="bt"><div class="bf" style="width:100.0%"></div></div></div>
-<div class="cv"><b>418.865</b><small>14 piezas · prom. 29.919</small></div></div><div class="crow"><div class="cn"><span class="rk">02</span><div><b>Presentación oficial de pilotos</b><small>Sistema de tres piezas: portada luchador, ficha oficial y trayectoria.</small></div></div>
+<div class="cv"><b>418.865</b><small>14 piezas · prom. 29.919 · engagement 8,3%</small></div></div><div class="crow"><div class="cn"><span class="rk">02</span><div><b>Presentación oficial de pilotos</b><small>Sistema de tres piezas: portada luchador, ficha oficial y trayectoria.</small></div></div>
 <div class="cb"><div class="bt"><div class="bf" style="width:50.1%"></div></div></div>
-<div class="cv"><b>209.689</b><small>12 piezas · prom. 17.474</small></div></div><div class="crow"><div class="cn"><span class="rk">03</span><div><b>Venta de entradas y promociones</b><small>Mapa de locaciones, Hospitality, código patrio y la cadena de sold outs con Fanki.</small></div></div>
+<div class="cv"><b>209.689</b><small>12 piezas · prom. 17.474 · engagement 6,7%</small></div></div><div class="crow"><div class="cn"><span class="rk">03</span><div><b>Venta de entradas y promociones</b><small>Mapa de locaciones, Hospitality, código patrio y la cadena de sold outs con Fanki.</small></div></div>
 <div class="cb"><div class="bt"><div class="bf" style="width:47.6%"></div></div></div>
-<div class="cv"><b>199.226</b><small>11 piezas · prom. 18.111</small></div></div><div class="crow"><div class="cn"><span class="rk">04</span><div><b>Expectativa y llegada a México</b><small>Teaser del cactus, cuenta regresiva, autos GT3 y orgullo mexicano.</small></div></div>
+<div class="cv"><b>199.226</b><small>11 piezas · prom. 18.111 · engagement 6,8%</small></div></div><div class="crow"><div class="cn"><span class="rk">04</span><div><b>Expectativa y llegada a México</b><small>Teaser del cactus, cuenta regresiva, autos GT3 y orgullo mexicano.</small></div></div>
 <div class="cb"><div class="bt"><div class="bf" style="width:44.9%"></div></div></div>
-<div class="cv"><b>188.111</b><small>9 piezas · prom. 20.901</small></div></div><div class="crow"><div class="cn"><span class="rk">05</span><div><b>Cobertura en tiempo real</b><small>Qualy, pole position, día de carrera y Heat 1 en el momento.</small></div></div>
+<div class="cv"><b>188.111</b><small>9 piezas · prom. 20.901 · engagement 8,4%</small></div></div><div class="crow"><div class="cn"><span class="rk">05</span><div><b>Cobertura en tiempo real</b><small>Qualy, pole position, día de carrera y Heat 1 en el momento.</small></div></div>
 <div class="cb"><div class="bt"><div class="bf" style="width:29.7%"></div></div></div>
-<div class="cv"><b>124.514</b><small>6 piezas · prom. 20.752</small></div></div><div class="crow"><div class="cn"><span class="rk">06</span><div><b>Activaciones y experiencias</b><small>Universidades, karting con Tatiana Calderón, firma de autógrafos y sorteos.</small></div></div>
+<div class="cv"><b>124.514</b><small>6 piezas · prom. 20.752 · engagement 7,2%</small></div></div><div class="crow"><div class="cn"><span class="rk">06</span><div><b>Activaciones y experiencias</b><small>Universidades, karting con Tatiana Calderón, firma de autógrafos y sorteos.</small></div></div>
 <div class="cb"><div class="bt"><div class="bf" style="width:25.9%"></div></div></div>
-<div class="cv"><b>108.588</b><small>7 piezas · prom. 15.513</small></div></div><div class="crow"><div class="cn"><span class="rk">07</span><div><b>Entrevistas y expectativas</b><small>Reels con la voz de los pilotos antes de su debut en México.</small></div></div>
+<div class="cv"><b>108.588</b><small>7 piezas · prom. 15.513 · engagement 7,6%</small></div></div><div class="crow"><div class="cn"><span class="rk">07</span><div><b>Entrevistas y expectativas</b><small>Reels con la voz de los pilotos antes de su debut en México.</small></div></div>
 <div class="cb"><div class="bt"><div class="bf" style="width:24.2%"></div></div></div>
-<div class="cv"><b>101.410</b><small>9 piezas · prom. 11.268</small></div></div><div class="crow"><div class="cn"><span class="rk">08</span><div><b>Resultados y cierre</b><small>Resultados oficiales, recap y el récord histórico de asistencia.</small></div></div>
+<div class="cv"><b>101.410</b><small>9 piezas · prom. 11.268 · engagement 6,3%</small></div></div><div class="crow"><div class="cn"><span class="rk">08</span><div><b>Resultados y cierre</b><small>Resultados oficiales, recap y el récord histórico de asistencia.</small></div></div>
 <div class="cb"><div class="bt"><div class="bf" style="width:24.2%"></div></div></div>
-<div class="cv"><b>101.278</b><small>4 piezas · prom. 25.320</small></div></div><div class="crow"><div class="cn"><span class="rk">09</span><div><b>Puebla como destino</b><small>Contenido de ciudad junto a Visit Puebla: historia, patrimonio y sabor.</small></div></div>
+<div class="cv"><b>101.278</b><small>4 piezas · prom. 25.320 · engagement 11,0%</small></div></div><div class="crow"><div class="cn"><span class="rk">09</span><div><b>Puebla como destino</b><small>Contenido de ciudad junto a Visit Puebla: historia, patrimonio y sabor.</small></div></div>
 <div class="cb"><div class="bt"><div class="bf" style="width:5.1%"></div></div></div>
-<div class="cv"><b>21.473</b><small>2 piezas · prom. 10.736</small></div></div></div>
+<div class="cv"><b>21.473</b><small>2 piezas · prom. 10.736 · engagement 7,0%</small></div></div></div>
 <div class="two" style="margin-top:18px"><div class="panel"><div class="kick">Promedio de visualizaciones por pieza</div><div class="bar "><div class="bl"><span>Informativos y anuncios oficiales</span><b>29.919</b></div><div class="bt"><div class="bf" style="width:100.0%"></div></div></div><div class="bar "><div class="bl"><span>Resultados y cierre</span><b>25.320</b></div><div class="bt"><div class="bf" style="width:84.6%"></div></div></div><div class="bar "><div class="bl"><span>Expectativa y llegada a México</span><b>20.901</b></div><div class="bt"><div class="bf" style="width:69.9%"></div></div></div><div class="bar "><div class="bl"><span>Cobertura en tiempo real</span><b>20.752</b></div><div class="bt"><div class="bf" style="width:69.4%"></div></div></div><div class="bar "><div class="bl"><span>Venta de entradas y promociones</span><b>18.111</b></div><div class="bt"><div class="bf" style="width:60.5%"></div></div></div><div class="bar "><div class="bl"><span>Presentación oficial de pilotos</span><b>17.474</b></div><div class="bt"><div class="bf" style="width:58.4%"></div></div></div><div class="bar "><div class="bl"><span>Activaciones y experiencias</span><b>15.513</b></div><div class="bt"><div class="bf" style="width:51.8%"></div></div></div><div class="bar "><div class="bl"><span>Entrevistas y expectativas</span><b>11.268</b></div><div class="bt"><div class="bf" style="width:37.7%"></div></div></div><div class="bar "><div class="bl"><span>Puebla como destino</span><b>10.736</b></div><div class="bt"><div class="bf" style="width:35.9%"></div></div></div></div>
 <div class="panel"><div class="kick">Lectura</div>
 <p style="color:var(--dim)">Los <b style="color:#fff">informativos y anuncios oficiales</b> lideran en volumen (418.865 vistas en 14 piezas) y también en promedio por pieza (29.919): el lanzamiento oficial fue la pieza más vista de la campaña. Le siguen <b style="color:#fff">resultados y cierre</b>, con 25.320 vistas promedio, impulsados por el anuncio del récord y las tomas aéreas.</p>
