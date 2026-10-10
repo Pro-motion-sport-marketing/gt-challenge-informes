@@ -428,7 +428,7 @@ footer a.ig{color:var(--dim);border-bottom:1px solid rgba(255,255,255,.25);paddi
 @media print{nav{display:none}section{break-inside:avoid;padding:50px 0}.hero{min-height:auto;padding-top:300px}}
 
 :root{--rosa:#e6007e;--cempa:#ffb000;--talavera:#1f4aa8;--verde:#00a651}
-.hero{min-height:94vh}
+.hero{min-height:max(94vh,580px)}
 .hero .bgv{position:absolute;inset:0;overflow:hidden;background:#000}
 .hero .bgv video,.hero .bgv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
 .hero .bgv:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,9,10,.45) 0%,rgba(9,9,10,.25) 18%,rgba(9,9,10,.72) 42%,rgba(9,9,10,.9) 62%,var(--bg) 100%),radial-gradient(120% 80% at 0% 100%,rgba(9,9,10,.55),transparent 60%)}
@@ -518,6 +518,30 @@ footer a.ig:hover{color:#fff;border-color:var(--org)}
 .fans .vt-img{aspect-ratio:auto;flex:1;min-height:260px}
 .act .vt-img{aspect-ratio:4/5}
 @media (max-width:980px){.destrow,.fans{grid-template-columns:repeat(2,minmax(0,1fr))}.destrow>.panel,.fans>.panel{grid-column:1/-1}}
+@media (max-width:700px){
+ .hero{min-height:0;display:block;padding:0 0 44px;overflow:hidden}
+ .hero .bgv{position:relative;inset:auto;width:100%;aspect-ratio:4/3;max-height:72vh}
+ .hero .bgv video{object-position:center}
+ .hero .bgv:after{background:linear-gradient(180deg,rgba(9,9,10,.35) 0%,rgba(9,9,10,0) 28%,rgba(9,9,10,0) 62%,var(--bg) 100%)}
+ .hero .wrap{margin-top:-28px}
+ .hero h1{font-size:clamp(28px,9.2vw,52px)}
+ .hero .sub{gap:8px 18px;font-size:11.5px;letter-spacing:.16em;margin-top:18px}
+ .rec{width:fit-content;max-width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:4px;border-radius:18px;padding:14px 18px;margin-top:20px;font-size:11.5px;letter-spacing:.12em;line-height:1.45}
+ .rec b{font-size:30px}
+ .viral h3{font-size:clamp(18px,5.4vw,26px)!important;overflow-wrap:normal}.viral img{max-width:100%;aspect-ratio:16/10}
+ .in .n{font-size:34px}
+ .tx4{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px}.tx div{padding:14px}.tx b{font-size:16px;line-height:1.15;overflow-wrap:anywhere}.tx small{font-size:12px;display:block;margin-top:4px}
+ .panel h3,.act h3,.fans h3,.destrow h3{font-size:clamp(17px,5.4vw,26px);overflow-wrap:normal}
+ .dest{grid-auto-flow:column;grid-template-columns:none!important;grid-auto-columns:42%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.dest figure{scroll-snap-align:start}
+ .k3 .kpi{display:block!important;padding:14px 16px!important}.k3 .kl{text-align:left!important;margin-top:6px!important;overflow-wrap:normal!important;letter-spacing:.1em}
+ .phtabs .ph:last-child:nth-child(odd){grid-column:1/-1}
+ .mats{grid-auto-flow:column;grid-template-columns:none!important;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.mats figure{scroll-snap-align:start}.mats img{height:300px}
+ .kgrid:not(.k3),.collab-hero{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .kgrid:not(.k3) .kpi,.collab-hero .kpi{padding:16px 14px}
+ .kgrid:not(.k3) .kv,.collab-hero .kv{font-size:clamp(20px,6.4vw,26px)!important}
+ .kgrid:not(.k3) .kl,.collab-hero .kl{font-size:10px;letter-spacing:.1em;margin-top:8px}
+ .kgrid:not(.k3) .ks,.collab-hero .ks{font-size:11.5px;line-height:1.35}
+}
 .act>*,.ai>*,.record>*,.medios>*,.tline>*,.mats>*,.moms>*{min-width:0}
 @media (max-width:1180px){.tline{grid-template-columns:repeat(2,minmax(0,1fr))}.medios{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:980px){.acts,.act,.act.wide,.ai,.record{grid-template-columns:minmax(0,1fr)}.dest{grid-template-columns:repeat(4,minmax(0,1fr))}.tx4{grid-template-columns:repeat(2,minmax(0,1fr))!important}.ph4,.crowd{grid-template-columns:repeat(2,minmax(0,1fr))}.mats img{height:260px}}
@@ -529,7 +553,7 @@ footer a.ig:hover{color:#fff;border-color:var(--org)}
 <a href="#resumen">Resumen</a><a href="#contexto">Contexto</a><a href="#concepto">Concepto</a><a href="#estrategia">Estrategia</a><a href="#entradas">Entradas</a><a href="#activaciones">Activaciones</a><a href="#medios">Medios</a><a href="#destino">Puebla</a><a href="#comunidad">Comunidad</a><a href="#contenido">Contenido</a>
 <a href="#transmision">Transmisión</a><a href="#pilotos">Pilotos</a><a href="#vivo">En vivo</a><a href="#resultados">Resultados</a><a href="#colaboracion">Colaboración</a><a href="#galeria">Galería</a></div><div class="navctl"><button id="expAll" title="Expandir todas las secciones">＋</button><button id="colAll" title="Contraer todas las secciones">−</button></div></div></nav>
 
-<header id="top" class="hero grain"><div class="bgv"><video id="heroVid" data-lg="media/hero_1280.mp4" data-sm="media/hero_854.mp4" poster="media/hero_poster.jpg" autoplay muted loop playsinline preload="auto" disablepictureinpicture disableremoteplayback aria-hidden="true" tabindex="-1"></video></div>
+<header id="top" class="hero grain"><div class="bgv"><video id="heroVid" data-lg="media/hero_hq.mp4" data-sm="media/hero_m.mp4" data-psm="media/hero_poster_m.jpg" poster="media/hero_poster.jpg" autoplay muted loop playsinline preload="auto" disablepictureinpicture disableremoteplayback aria-hidden="true" tabindex="-1"></video></div>
 <div class="papel" aria-hidden="true"></div><div class="wrap">
 <div class="kick" style="margin-bottom:16px">Informe de resultados · Temporada 2026</div>
 <h1>5ta fecha<br><span class="grad">Puebla, México</span></h1>
@@ -537,9 +561,9 @@ footer a.ig:hover{color:#fff;border-color:var(--org)}
 <div class="rec"><b class="grad">25.000</b> asistentes · récord histórico del campeonato</div>
 </div></header>
 <script>
-(function(){var v=document.getElementById('heroVid');if(!v)return;var big=window.matchMedia('(min-width:900px)').matches&&!(navigator.connection&&navigator.connection.saveData);
-v.src=big?v.dataset.lg:v.dataset.sm;v.muted=true;v.setAttribute('muted','');var p=v.play();if(p&&p.catch)p.catch(function(){});
-document.addEventListener('visibilitychange',function(){if(!document.hidden){var q=v.play();if(q&&q.catch)q.catch(function(){})}})})();
+(function(){var v=document.getElementById('heroVid');if(!v)return;var mob=window.matchMedia('(max-width:700px)').matches;
+if(mob)v.poster=v.dataset.psm;v.src=mob?v.dataset.sm:v.dataset.lg;v.muted=true;v.setAttribute('muted','');var p=v.play();if(p&&p.catch)p.catch(function(){});
+function go(){var q=v.play();if(q&&q.catch)q.catch(function(){})}v.addEventListener('loadeddata',go);v.addEventListener('canplay',go);document.addEventListener('visibilitychange',function(){if(!document.hidden)go()});['touchstart','click','scroll'].forEach(function(t){window.addEventListener(t,function h(){if(v.paused)go();window.removeEventListener(t,h)},{passive:true})})})();
 </script>
 
 <section id="resumen" class="grain"><div class="wrap">
