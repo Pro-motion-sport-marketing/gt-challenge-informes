@@ -470,6 +470,14 @@ h1 .grad,h2 .grad,h3 .grad{padding-right:0;margin-right:0}
 @media (max-width:700px){.eng{padding:16px}.eng-top{grid-template-columns:minmax(0,1fr)}.eng-top>div{padding:14px 16px}.eng-top b{font-size:30px}.eng-top span{margin-top:6px;font-size:11px}
  .er{grid-template-columns:minmax(0,1fr);gap:6px;padding:12px 14px}.er>span:not(.en){display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:6px;border-top:1px solid var(--line)}.er b{font-size:18px;order:2}.er small{order:1;font-size:12px}}
 @media (max-width:600px){.phtxt h3{font-size:clamp(22px,7vw,30px);overflow-wrap:normal}}
+/* tarjeta TOP 1 */
+.cards.top .pc.big .pc-b{flex:none}
+.cards.top .pc.big .pc-img{flex:1 1 auto;min-height:420px}
+.cards.top .pc.big .pc-img img{position:absolute;inset:0}
+@media (max-width:980px){.cards.top .pc.big{grid-column:1/-1;grid-row:auto;flex-direction:row}
+ .cards.top .pc.big .pc-img{flex:none;width:46%;min-height:0;aspect-ratio:4/5}
+ .cards.top .pc.big .pc-b{flex:1;justify-content:center;padding:22px}.cards.top .pc.big .pc-t{font-size:18px}.cards.top .pc.big .pc-m{margin-top:16px}}
+@media (max-width:600px){.cards.top .pc.big{flex-direction:column}.cards.top .pc.big .pc-img{width:100%}.cards.top .pc.big .pc-b{padding:14px 16px 16px}.cards.top .pc.big .pc-m b{font-size:30px}}
 /* portada en video + palmeras */
 .hero{min-height:max(94vh,580px)}
 .hero .bgv{position:absolute;inset:0;overflow:hidden;background:#000}
