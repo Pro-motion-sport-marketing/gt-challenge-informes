@@ -453,6 +453,8 @@ footer a.ig{color:var(--dim);border-bottom:1px solid rgba(255,255,255,.25);paddi
 .grad{padding-right:.1em;margin-right:-.1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .mega.grad{padding-right:.12em;margin-right:0;display:inline-block}
 h1 .grad,h2 .grad,h3 .grad{padding-right:0;margin-right:0}
+/* Safari: el degradado recorta glifos que sobresalen; un espacio fino al final amplía la zona de texto */
+.mega::after,.num.grad::after,.kv .grad::after,.kpi.hot .kv::after,.n.grad::after,.rec b::after,.viral h3 .grad::after,.cbox .kv.grad::after,.eng-top b.grad::after,.record h3::after{content:"";display:inline-block;width:.22em}
 .viral h3{font-size:clamp(26px,3.4vw,50px);overflow-wrap:normal;word-break:normal}
 
 .eng{margin-top:18px;padding:26px;border-radius:22px;border:1px solid var(--line);background:var(--panel)}
@@ -498,6 +500,17 @@ h1 .grad,h2 .grad,h3 .grad{padding-right:0;margin-right:0}
  .palm.r{width:44vw;right:-6%;top:-2%}.palm.l{width:40vw;left:-6%;top:-3%}
  .live .hl-st{grid-template-columns:1fr}.live .hl-st div{display:flex;justify-content:space-between;align-items:baseline}
  .close .palm.r{width:38vw}.close .palm.l{width:34vw}
+}
+
+/* cifras que se ajustan al ancho de su recuadro (nunca se salen ni se cortan) */
+.imp-big,.kpi,.cbox,.eng-top>div{container-type:inline-size}
+@supports (font-size:1cqw){
+ .mega{font-size:clamp(40px,19cqw,104px)!important}
+ .kgrid .kv,.kgrid:not(.k3) .kv,.kgrid.kmini .kv{font-size:clamp(17px,14cqw,44px)!important}
+ .k3 .kv{font-size:clamp(18px,13cqw,27px)!important}
+ .collab-hero .kv,section .collab-hero .kv{font-size:clamp(17px,14cqw,38px)!important}
+ .cbox .kv{font-size:clamp(24px,15cqw,52px)!important}
+ .eng-top b{font-size:clamp(24px,16cqw,46px)!important}
 }
 @media print{nav{display:none}section{break-inside:avoid;padding:50px 0}.hero{min-height:auto;padding-top:300px}}
 </style></head><body>
