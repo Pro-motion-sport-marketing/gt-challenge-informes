@@ -498,6 +498,7 @@ h1 .grad,h2 .grad,h3 .grad{padding-right:0;margin-right:0}
 .kvset-h>*,.kvcards>*{min-width:0}
 @media (max-width:980px){.kvcards{grid-template-columns:repeat(2,minmax(0,1fr))}.kvset-h{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:600px){.kvcards{gap:10px}.kvc-b{padding:10px}.kvc-b>b{font-size:12.5px}.kvc-b small{font-size:11.5px}.kvc-v b{font-size:15px}.kvmore{grid-auto-columns:42%}}
+.slider img.sl-item{-webkit-user-drag:none;cursor:grab}.slider img.sl-item:active{cursor:grabbing}
 /* portada en video + palmeras */
 .hero{min-height:max(94vh,580px)}
 .hero .bgv{position:absolute;inset:0;overflow:hidden;background:#000}
@@ -550,6 +551,11 @@ h1 .grad,h2 .grad,h3 .grad{padding-right:0;margin-right:0}
 .igm.wide .sl-dots{display:none}
 @media (max-width:600px){.mason{columns:2 150px;column-gap:8px}.mf{margin-bottom:8px;border-radius:10px}.mf .cr{font-size:9.5px;padding:3px 7px;left:6px;bottom:6px}.gal-hero{border-radius:14px}.igm.wide .slider{aspect-ratio:4/5}}
 
+.tvp.has-cov{display:grid;grid-template-columns:minmax(0,.5fr) minmax(0,1.5fr);gap:26px;align-items:start}
+.tvcov{position:relative;display:block;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.5);position:sticky;top:80px}
+.tvcov img{width:100%;display:block;transition:transform .5s}.tvcov:hover img{transform:scale(1.03)}
+.tvp-main{min-width:0}
+@media (max-width:980px){.tvp.has-cov{grid-template-columns:minmax(0,1fr)}.tvcov{position:relative;top:0;max-width:340px}}
 .tvp{margin-top:28px;padding:26px;border-radius:22px;border:1px solid var(--line);background:var(--panel)}
 .tvp-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 28px;margin-bottom:18px}
 .tvp-h h3{font-size:clamp(24px,3vw,36px);margin-top:6px;overflow-wrap:normal}
@@ -569,12 +575,12 @@ h1 .grad,h2 .grad,h3 .grad{padding-right:0;margin-right:0}
 .fox h4{font-family:"PROS";font-weight:400;font-size:22px;text-transform:uppercase;margin:6px 0 12px}
 .fox-k{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
 .fox-k div{padding:12px;border-radius:12px;background:rgba(0,0,0,.25);border:1px solid var(--line);min-width:0;container-type:inline-size}
-.fox-k b{display:block;font-family:"PROS";font-weight:400;font-size:clamp(17px,15cqw,30px);white-space:nowrap}.fox-k small{color:var(--dim);font-size:11.5px;line-height:1.3;display:block;margin-top:4px}
+.fox-k b{display:block;font-family:"PROS";font-weight:400;font-size:clamp(15px,12cqw,30px);white-space:nowrap}.fox-k small{color:var(--dim);font-size:11.5px;line-height:1.3;display:block;margin-top:4px}
 .fox p{color:var(--dim);font-size:13.5px;margin-top:12px}
 .fox-p{display:grid;gap:10px;align-content:start}
 .fox-p .bar{margin:2px 0}.fox-p .kick{margin-top:4px}
 .fox>*{min-width:0}
-@media (max-width:900px){.fox{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:1240px){.fox{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:600px){.tvp{padding:16px}.tvrows{grid-template-columns:minmax(0,1fr)}.tvtot{width:100%}.fox{padding:14px}.fox-k{grid-template-columns:minmax(0,1fr)}.fox-k div{display:flex;justify-content:space-between;align-items:baseline;gap:10px}.pch{white-space:normal;text-align:right}}
 </style></head><body>
 
@@ -895,7 +901,7 @@ document.addEventListener('visibilitychange',function(){if(!document.hidden)go()
 <div><b>REV</b><small>Carrera 1 y 2 · canal, cable, IPTV</small></div>
 <div><b>TVC Deportes</b><small>México · Megacable 303 · Totalplay 575 · Dish 348</small></div>
 <div><b>YouTube oficial</b><small>@gtchallengedelasamericas-OFC · mundial</small></div></div>
-<div class="tvp"><div class="tvp-h"><div><div class="kick">Audiencia en televisión por canal</div><h3>Barbados en <span class="grad">televisión</span></h3></div><div class="tvtot"><b class="num grad">42.604</b><span>audiencia total reportada<br><small>suma de los canales con dato</small></span></div></div><div class="tvrows"><div class="tvr"><div class="tvl"><b>TVC Deportes y TVC Deportes 2</b><span class="num">24.856</span></div><div class="bt"><div class="bf" style="width:100.0%"></div></div></div><div class="tvr"><div class="tvl"><b>Claro Sports</b><span class="num">17.217</span></div><div class="bt"><div class="bf" style="width:69.3%"></div></div></div><div class="tvr"><div class="tvl"><b>TDMAX</b><span class="num">531</span></div><div class="bt"><div class="bf" style="width:2.1%"></div></div></div><div class="tvr pend"><div class="tvl"><b>Telemundo</b><span class="pch">Por confirmar con el canal</span></div></div><div class="tvr pend"><div class="tvl"><b>WIN Sports</b><span class="pch">Por confirmar con el canal</span></div></div><div class="tvr pend"><div class="tvl"><b>REV TV</b><span class="pch">Por confirmar con el canal</span></div></div></div><div class="tvyt"><b class="num">15.998</b><span>visualizaciones de la transmisión en el YouTube oficial del campeonato (no se suman al total de TV)</span></div><p class="note">Cifras reportadas por cada canal. Los canales marcados como pendientes se actualizarán cuando entreguen sus resultados.</p></div>
+<div class="tvp has-cov"><a class="tvcov" data-ig="p/DcrIoisjibZ" href="https://www.instagram.com/p/DcrIoisjibZ/" target="_blank" rel="noopener"><img loading="lazy" src="media/i_16475afef648.jpg" alt="Transmisión en vivo · post oficial"><span class="pi">❯</span></a><div class="tvp-main"><div class="tvp-h"><div><div class="kick">Audiencia en televisión por canal</div><h3>Barbados en <span class="grad">televisión</span></h3></div><div class="tvtot"><b class="num grad">42.604</b><span>audiencia total reportada<br><small>suma de los canales con dato</small></span></div></div><div class="tvrows"><div class="tvr"><div class="tvl"><b>TVC Deportes y TVC Deportes 2</b><span class="num">24.856</span></div><div class="bt"><div class="bf" style="width:100.0%"></div></div></div><div class="tvr"><div class="tvl"><b>Claro Sports</b><span class="num">17.217</span></div><div class="bt"><div class="bf" style="width:69.3%"></div></div></div><div class="tvr"><div class="tvl"><b>TDMAX</b><span class="num">531</span></div><div class="bt"><div class="bf" style="width:2.1%"></div></div></div><div class="tvr pend"><div class="tvl"><b>Telemundo</b><span class="pch">Por confirmar con el canal</span></div></div><div class="tvr pend"><div class="tvl"><b>WIN Sports</b><span class="pch">Por confirmar con el canal</span></div></div><div class="tvr pend"><div class="tvl"><b>REV TV</b><span class="pch">Por confirmar con el canal</span></div></div></div><div class="tvyt"><b class="num">15.998</b><span>visualizaciones de la transmisión en el YouTube oficial del campeonato (no se suman al total de TV)</span></div><p class="note">Cifras reportadas por cada canal. Los canales marcados como pendientes se actualizarán cuando entreguen sus resultados.</p></div></div>
 </div></section>
 
 <section id="pilotos" class="grain"><div class="photo-bg" style="background-image:url(media/i_114d41cfacab.jpg)"></div><div class="shade"></div><div class="wrap">
@@ -1080,7 +1086,7 @@ function slider(root){const imgs=$$('.sl-item',root);if(!imgs.length)return;let 
  imgs.forEach((_,k)=>{const d=document.createElement('button');d.setAttribute('aria-label','Slide '+(k+1));d.onclick=()=>go(k);dots.appendChild(d)});
  const go=k=>{i=(k+imgs.length)%imgs.length;imgs.forEach((im,n)=>{im.classList.toggle('on',n===i);if(im.tagName==='VIDEO'&&n!==i)im.pause();if(im.tagName==='VIDEO'&&n===i&&im.readyState<1)im.load()});$$('button',dots).forEach((d,n)=>d.classList.toggle('on',n===i));const nx=imgs[(i+1)%imgs.length];if(nx.loading==='lazy')nx.loading='eager';const cur=imgs[i];root.classList.toggle('isvid',cur.tagName==='VIDEO')};
  $('.sl-prev',root).onclick=e=>{e.stopPropagation();go(i-1)};$('.sl-next',root).onclick=e=>{e.stopPropagation();go(i+1)};
- let x0=null;root.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});root.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null});
+ let x0=null;root.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});root.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null});let px=null;root.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.target.closest('button,video,a'))return;px=e.clientX;e.preventDefault()});root.addEventListener('pointerup',e=>{if(px===null)return;const dx=e.clientX-px;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));px=null});root.addEventListener('pointerleave',()=>{px=null});
  root._go=d=>go(i+d);if(imgs.length<2){$('.sl-prev',root).style.display=$('.sl-next',root).style.display='none'}go(0)}
 $$('[data-slider]').forEach(slider);
 document.addEventListener('click',e=>{const a=e.target.closest('[data-ig]');if(!a||e.metaKey||e.ctrlKey)return;const code=a.dataset.ig.split('/')[1],d=MD[code];if(!d)return;e.preventDefault();
